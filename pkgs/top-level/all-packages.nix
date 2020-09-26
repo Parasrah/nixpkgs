@@ -10003,6 +10003,7 @@ in
   inherit (beam.packages.erlang)
     rebar rebar3
     fetchHex beamPackages
+    buildMix fetchMixDeps
     relxExe;
 
   inherit (beam.packages.erlangR19) cuter lfe_1_2;
@@ -11002,6 +11003,8 @@ in
   elfutils = callPackage ../development/tools/misc/elfutils { };
 
   eliot-tree = callPackage ../development/tools/eliot-tree { };
+
+  elixir-ls = callPackage ../development/tools/elixir-ls { };
 
   emma = callPackage ../development/tools/analysis/emma { };
 
